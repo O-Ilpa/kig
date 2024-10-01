@@ -53,7 +53,7 @@ addGovernates("Cairo", "#governates", "cairo.webp");
 addGovernates("Behira", "#governates", "beh.webp");
 addGovernates("Sohag", "#governates", "soh.webp");
 addGovernates("Hurghada", "#governates", "hur.webp");
-addGovernates("Aswan", "#governates", "Asw.webp");
+addGovernates("Aswan", "#governates", "asw.webp");
 addGovernates("Assuit", "#governates", "asy.webp");
 addGovernates("Beni Suef", "#governates", "ben.webp");
 addGovernates("Dakahlia", "#governates", "dakah.webp");
