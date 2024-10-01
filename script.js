@@ -37,7 +37,7 @@ function addGovernates(name, src, bgimg) {
   let govBox = document.createElement("a");
   govBox.classList.add("box")
   govBox.href = `${src}`;
-  govBox.style.cssText = `background-image: url(../images/${bgimg});`
+  govBox.style.cssText = `background-image: url(./images/${bgimg});`
   govBox.innerHTML = ` 
     <div>
       <div class="text">
