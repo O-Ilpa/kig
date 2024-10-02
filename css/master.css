@@ -25,10 +25,10 @@ html {
 /* Start Header  */
 
 header {
-  width: 85%;
+  width: 90%;
   position: absolute;
   top: 50px;
-  left: 7.5%;
+  left: 5%;
   backdrop-filter: blur(10px);
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.072);
@@ -154,6 +154,7 @@ header .toggleBar span:last-child {
 .landing .container p {
   font-size: 70px;
   margin: 0;
+  padding: 20px;
 }
 .landing .container h1 {
   color: #ccc;
@@ -252,7 +253,6 @@ header .toggleBar span:last-child {
   justify-content: center;
   align-items: center;
   width: 350px;
-  
 }
 .programs .items .box .image {
   overflow: hidden;
@@ -361,7 +361,7 @@ header .toggleBar span:last-child {
   letter-spacing: 1px;
 }
 .governates .container .box div p::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 4px;
   width: 130%;
@@ -387,7 +387,7 @@ header .toggleBar span:last-child {
 .text p {
   margin-bottom: 10px;
 }
-.governates .container .box:hover .text  p {
+.governates .container .box:hover .text p {
   margin-bottom: 20px;
 }
 .text .line,
@@ -413,7 +413,7 @@ header .toggleBar span:last-child {
     position: fixed;
     background-color: #236b21;
     padding: 0;
-    height: 465%;
+    height: 400%;
     width: 100%;
     transform: translateY(63%);
     padding: 50px;
@@ -467,12 +467,13 @@ header .toggleBar span:last-child {
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 440px) {
   .landing .container h1 {
     font-size: 70px;
   }
   .landing .container p {
     font-size: 40px;
+    padding: 20px;
   }
 }
 /* Responsive media End */
