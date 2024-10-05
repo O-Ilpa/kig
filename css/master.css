@@ -44,7 +44,7 @@ header nav {
 }
 header nav img {
   position: relative;
-  height: 65px;
+  height: 80px;
 }
 header nav ul {
   display: flex;
@@ -100,7 +100,7 @@ header .toggleBar span {
   width: 35px;
   border-radius: 4px;
   background-color: #236b21;
-  transition: 0.1s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 header .toggleBar span:nth-child(2) {
   margin: 7px 0 0 0;
@@ -112,10 +112,10 @@ header .toggleBar span:last-child {
   opacity: 0;
 }
 .downRotate {
-  transform: translateY(10px) rotate(-45deg);
+  transform: translateY(7px) rotate(-45deg);
 }
 .upRotate {
-  transform: translateY(-10px) rotate(45deg);
+  transform: translateY(-7px) rotate(45deg);
 }
 /* End Header  */
 /* Start Landing  */
@@ -414,7 +414,7 @@ header .toggleBar span:last-child {
     position: fixed;
     background-color: #236b21;
     padding: 0;
-    height: 400%;
+    height: 460%;
     width: 100%;
     transform: translateY(63%);
     padding: 50px;
@@ -430,7 +430,7 @@ header .toggleBar span:last-child {
     display: none;
   }
   header .toggleBar + nav ul li {
-    padding: 20px;
+    padding: 10px;
     border-bottom: solid #73c54c 5px;
     border-radius: 5px;
   }
@@ -515,6 +515,9 @@ header .toggleBar span:last-child {
   }
   .header {
     margin: 10px;
+  }
+  header nav ul li {
+    padding: 5px !important;
   }
 }
 /* Responsive media End */

@@ -33,10 +33,9 @@ toggleBar.addEventListener("click", function () {
   bottomBar.classList.toggle("upRotate");
 });
 
-function addGovernates(name, src, bgimg) {
+function addGovernates(name, bgimg) {
   let govBox = document.createElement("a");
   govBox.classList.add("box")
-  govBox.href = `${src}`;
   govBox.style.cssText = `background-image: url(./images/${bgimg});`
   govBox.innerHTML = ` 
     <div>
@@ -48,18 +47,18 @@ function addGovernates(name, src, bgimg) {
   govContainer.appendChild(govBox);
 }
 
-addGovernates("Alexandria", "#governates", "alx.webp");
-addGovernates("Cairo", "#governates", "cairo.webp");
-addGovernates("Behira", "#governates", "beh.webp");
-addGovernates("Sohag", "#governates", "soh.webp");
-addGovernates("Hurghada", "#governates", "hur.webp");
-addGovernates("Aswan", "#governates", "asw.webp");
-addGovernates("Assuit", "#governates", "asy.webp");
-addGovernates("Beni Suef", "#governates", "ben.webp");
-addGovernates("Dakahlia", "#governates", "dakah.webp");
-addGovernates("Damietta", "#governates", "dam.webp");
-addGovernates("fayoum", "#governates", "fay.webp");
-addGovernates("Gharbia", "#governates", "ghar.webp");
-addGovernates("Giza", "#governates", "giz.webp");
-addGovernates("Ismailia", "#governates", "ism.webp");
-addGovernates("Kafr El-Sheikh", "#governates", "kaf.webp");
+addGovernates("Alexandria",  "alx.webp");
+addGovernates("Cairo",  "cairo.webp");
+addGovernates("Behira",  "beh.webp");
+addGovernates("Sohag",  "soh.webp");
+addGovernates("Hurghada", "hur.webp");
+addGovernates("Aswan",  "asw.webp");
+addGovernates("Assuit",  "asy.webp");
+addGovernates("Beni Suef",  "ben.webp");
+addGovernates("Dakahlia",  "dakah.webp");
+addGovernates("Damietta",  "dam.webp");
+addGovernates("fayoum",  "fay.webp");
+addGovernates("Gharbia",  "ghar.webp");
+addGovernates("Giza",  "giz.webp");
+addGovernates("Ismailia",  "ism.webp");
+addGovernates("Kafr El-Sheikh",  "kaf.webp");
