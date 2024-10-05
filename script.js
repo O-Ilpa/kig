@@ -41,7 +41,7 @@ function addGovernates(name, src, bgimg) {
   govBox.innerHTML = ` 
     <div>
       <div class="text">
-      <h2>${name}</h2>
+      <h3>${name}</h3>
       <p>learn more</p>
       </div>
     </div>`;

@@ -44,7 +44,7 @@ header nav {
 }
 header nav img {
   position: relative;
-  height: 80px;
+  height: 65px;
 }
 header nav ul {
   display: flex;
@@ -53,7 +53,7 @@ header nav ul {
 }
 header nav ul li a {
   position: relative;
-  padding: 0 20px 0 20px;
+  padding: 0 10px 0 10px;
   font-size: 22px;
   font-weight: 700;
   color: #ccc;
@@ -96,17 +96,17 @@ header .toggleBar {
 }
 header .toggleBar span {
   position: absolute;
-  height: 5px;
-  width: 40px;
+  height: 4px;
+  width: 35px;
   border-radius: 4px;
   background-color: #236b21;
   transition: 0.1s ease-in-out;
 }
 header .toggleBar span:nth-child(2) {
-  margin: 10px 0 0 0;
+  margin: 7px 0 0 0;
 }
 header .toggleBar span:last-child {
-  margin: 20px 0 0 0;
+  margin: 14px 0 0 0;
 }
 .dissapp {
   opacity: 0;
@@ -195,13 +195,13 @@ header .toggleBar span:last-child {
   margin-right: 30px;
   right: 10px;
 }
-.intro .container .content h2 {
+.intro .container .content h4 {
   padding: 10px;
   color: #1d594b;
 }
 .intro .container .content p {
   color: #1d594b;
-  padding: 10px;
+  padding: 5px;
 }
 /* End Intro */
 /* Start Programs */
@@ -260,7 +260,7 @@ header .toggleBar span:last-child {
   height: 290px;
   width: 300px;
 }
-.programs .items .box h4 {
+.programs .items .box h5 {
   position: absolute;
   top: 50%;
   font-size: 30px;
@@ -269,9 +269,10 @@ header .toggleBar span:last-child {
   background-color: #75c54944;
   padding: 20px;
   left: 50%;
-  width: 70%;
+  width: 80%;
   font-weight: bold;
   color: white;
+  border-radius: 10px;
 }
 .programs .items .box p {
   color: #1d594b;
@@ -342,14 +343,14 @@ header .toggleBar span:last-child {
 }
 
 .governates .container .box div p {
-  font-size: 20px;
+  font-size: 15px;
   position: relative;
   margin-top: 30px;
 }
 .text {
   width: 100%;
   height: 50%;
-  transform: translateY(80%);
+  transform: translateY(90%);
   transition: 0.5s;
   color: white;
   z-index: 2;
@@ -357,7 +358,7 @@ header .toggleBar span:last-child {
   flex-direction: column;
   align-items: center;
 }
-.text h2 {
+.text h3 {
   letter-spacing: 1px;
 }
 .governates .container .box div p::before {
@@ -459,7 +460,7 @@ header .toggleBar span:last-child {
     top: -30px;
   }
   .intro .container img {
-    width: 98%;
+    width: 92%;
     margin: 0;
   }
   header nav ul li a {
@@ -467,13 +468,53 @@ header .toggleBar span:last-child {
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 750px) {
   .landing .container h1 {
-    font-size: 70px;
+    font-size: 35px;
   }
   .landing .container p {
-    font-size: 40px;
+    font-size: 25px;
     padding: 20px;
+  }
+  header nav img {
+    height: 45px;
+  }
+  .intro .container .content p {
+    font-size: 10px;
+    padding: 0px;
+  }
+  .programs .header {
+    font-size: px;
+  }
+  .programs .items .box {
+    width: 90%;
+    overflow: hidden;
+  }
+  .programs .items .box .image {
+    width: 80%;
+    height: 100%;
+  }
+  .programs .items .box .image img {
+    width: 100%;
+    height: 100%;
+  }
+  .programs .items .box h5 {
+    font-size: 13px;
+    top: 35%;
+  }
+  .programs .items .box p {
+    font-size: 10px;
+  }
+  .governates .container a {
+    width: 90% !important;
+    height: 90% !important;
+  }
+  .governates .container .box div::after {
+    width: 100%;
+    height: 100%;
+  }
+  .header {
+    margin: 10px;
   }
 }
 /* Responsive media End */
