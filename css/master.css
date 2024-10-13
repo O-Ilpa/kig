@@ -195,13 +195,14 @@ header .toggleBar span:last-child {
   margin-right: 30px;
   right: 10px;
 }
-.intro .container .content h4 {
+.intro .container .content h2 {
   padding: 10px;
   color: #1d594b;
+  font-weight: 900;
 }
 .intro .container .content p {
   color: #1d594b;
-  padding: 5px;
+  padding: 10px;
 }
 /* End Intro */
 /* Start Programs */
@@ -217,7 +218,7 @@ header .toggleBar span:last-child {
 .header {
   color: #1d594b;
   text-align: center;
-  margin: 0 10px 0 10px;
+  margin: 30px;
 }
 .programs img {
   height: 150px;
@@ -278,6 +279,7 @@ header .toggleBar span:last-child {
   color: #1d594b;
   font-weight: bold;
   padding-top: 10px;
+  line-height: 1.5;
 }
 /* End Programs */
 
@@ -295,7 +297,6 @@ header .toggleBar span:last-child {
 }
 .governates img {
   height: 150px;
-  width: 150px;
 }
 .governates .container {
   display: flex;
@@ -473,51 +474,7 @@ header .toggleBar span:last-child {
     font-size: 35px;
   }
   .landing .container p {
-    font-size: 25px;
-    padding: 20px;
-  }
-  header nav img {
-    height: 45px;
-  }
-  .intro .container .content p {
-    font-size: 10px;
-    padding: 0px;
-  }
-  .programs .header {
-    font-size: px;
-  }
-  .programs .items .box {
-    width: 90%;
-    overflow: hidden;
-  }
-  .programs .items .box .image {
-    width: 80%;
-    height: 100%;
-  }
-  .programs .items .box .image img {
-    width: 100%;
-    height: 100%;
-  }
-  .programs .items .box h5 {
-    font-size: 13px;
-    top: 35%;
-  }
-  .programs .items .box p {
-    font-size: 10px;
-  }
-  .governates .container a {
-    width: 90% !important;
-    height: 90% !important;
-  }
-  .governates .container .box div::after {
-    width: 100%;
-    height: 100%;
-  }
-  .header {
-    margin: 10px;
-  }
-  header nav ul li {
-    padding: 5px !important;
+    font-size: 40px;
   }
 }
 /* Responsive media End */
