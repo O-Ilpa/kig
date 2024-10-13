@@ -36,7 +36,7 @@ toggleBar.addEventListener("click", function () {
 function addGovernates(name, bgimg) {
   let govBox = document.createElement("a");
   govBox.classList.add("box")
-  govBox.style.cssText = `background-image: url(../images/${bgimg});`
+  govBox.style.cssText = `background-image: url(./images/${bgimg});`
   govBox.innerHTML = ` 
     <div> 
       <div class="text">
