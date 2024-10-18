@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap");
-
+:root {
+  --header-color: #4e342e;
+  --main-color: #4e342ec2;
+  --secondary-color: #e5d5c3;
+  --main-radius: 10px;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -195,14 +200,33 @@ header .toggleBar span:last-child {
   margin-right: 30px;
   right: 10px;
 }
-.intro .container .content h2 {
-  padding: 10px;
+.intro .container .content h3 {
+  padding: 10px 0;
   color: #1d594b;
-  font-weight: 900;
 }
 .intro .container .content p {
   color: #1d594b;
-  padding: 10px;
+  line-height: 1.8;
+}
+.loader {
+  height: 100%;
+  width: 100%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.go-up {
+  transform: translateY(100%);
+  transition: .9s ease-in-out ;
+  opacity: 0;
+}
+svg {
+  height: 150px;
 }
 /* End Intro */
 /* Start Programs */
@@ -218,7 +242,7 @@ header .toggleBar span:last-child {
 .header {
   color: #1d594b;
   text-align: center;
-  margin: 30px;
+  margin: 0 10px 0 10px;
 }
 .programs img {
   height: 150px;
@@ -261,7 +285,7 @@ header .toggleBar span:last-child {
   height: 290px;
   width: 300px;
 }
-.programs .items .box h5 {
+.programs .items .box h4 {
   position: absolute;
   top: 50%;
   font-size: 30px;
@@ -285,30 +309,22 @@ header .toggleBar span:last-child {
 
 /* Start Governates */
 .governates {
-  min-height: 100vh;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin: 50px 0 50px 0;
-  flex-wrap: wrap;
-  flex-grow: 0;
 }
 .governates img {
   height: 150px;
+  width: 150px;
 }
 .governates .container {
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  align-items: center;
-  flex-wrap: wrap;
 }
 .governates .container .box {
   overflow: hidden;
-  height: 300px;
-  width: 300px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -317,7 +333,15 @@ header .toggleBar span:last-child {
   border-radius: 10px;
   background-position: center;
 }
-
+.dots {
+  bottom: -50%;
+  position: absolute;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 0 auto;
+}
 .governates .container .box div {
   position: relative;
   display: flex;
@@ -329,8 +353,8 @@ header .toggleBar span:last-child {
 }
 .governates .container .box div::after {
   position: absolute;
-  height: 300px;
-  width: 300px;
+  height: 100%;
+  width: 100%;
   content: "";
   transform: translateY(60%);
   transition: top 0.4s ease, transform 0.4s ease, -webkit-transform 0.4s ease;
@@ -397,9 +421,148 @@ header .toggleBar span:last-child {
 .text p {
   margin-bottom: 30px;
 }
-
+.slide-container {
+  max-width: 90vw;
+  width: 100%;
+  box-sizing: unset;
+  padding: 40px 0;
+}
+.slide-content {
+  box-sizing: unset;
+  margin: 40px 40px 0;
+  padding: 45px 20px;
+  overflow: hidden;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #1d594b !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #1d594b !important;
+}
 /* End Governates */
+/* Start ContactUs  */
+.contact-us .container {
+  padding: 20px;
+}
 
+.contact-us {
+  min-height: 90vh;
+  background-color: #00000010;
+  position: relative;
+}
+.contact-us::before {
+  content: '';
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(to right, #0b2c09, #236b1f);
+  border-radius: 40% 25% 70% 55%;
+  filter: blur(98px);
+  top: 23%;
+}
+
+.contact-us .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-heading h1 {
+  font-family: "Overlock SC", sans-serif;
+  position: relative;
+}
+.main-heading {
+  margin: 0 0 20px 0;
+}
+.main-heading::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-color: #1d594b;
+  bottom: 0;
+  border-radius: 20px;
+}
+
+.main-heading::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: #1d594b 5px solid;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  top: 110%;
+}
+.contact-us .container input[type="submit"] {
+  width: 200px;
+  text-align: center;
+  margin: 20px;
+  cursor: pointer;
+  background: #1d594b;
+  color: var(--secondary-color);
+  font-family: "Overlock SC", sans-serif;
+}
+.contact-us .container form {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  align-items: flex-end;
+  font-family: "Overlock SC", sans-serif;
+}
+.contact-us .container form input,
+textarea {
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 40px;
+  font-family: "Overlock SC", sans-serif;
+  background-color: #ffffff7c;
+  backdrop-filter: blur(10px);
+  border: 1px black solid;
+}
+.contact-us .container form input:focus, textarea:focus {
+  outline: none;
+}
+.contact-us .container form textarea {
+  resize: none;
+  height: 200px;
+  margin: 10px;
+  font-family: "Overlock SC", sans-serif;
+  padding: 30px;
+}
+.maps {
+  border: solid 3px #0b2c09 !important;
+  margin: 10px;
+  border-radius: 25px;
+}
+#phone {
+  position: relative;
+}
+@media (max-width: 925px) {
+  .contact-us .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contact-us .container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}
+@media (max-width: 755px) {
+  .maps {
+    width: 100%;
+    height: 600px;
+  }
+}
+/* End ContactUs  */
 /* Responsive media Start */
 
 @media (max-width: 1130px) {
@@ -434,6 +597,10 @@ header .toggleBar span:last-child {
     padding: 10px;
     border-bottom: solid #73c54c 5px;
     border-radius: 5px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
   }
 }
 
@@ -474,7 +641,51 @@ header .toggleBar span:last-child {
     font-size: 35px;
   }
   .landing .container p {
-    font-size: 40px;
+    font-size: 25px;
+    padding: 20px;
+  }
+  header nav img {
+    height: 45px;
+  }
+  .intro .container .content p {
+    font-size: 10px;
+    padding: 0px;
+  }
+  .programs .header {
+    font-size: px;
+  }
+  .programs .items .box {
+    width: 90%;
+    overflow: hidden;
+  }
+  .programs .items .box .image {
+    width: 80%;
+    height: 100%;
+  }
+  .programs .items .box .image img {
+    width: 100%;
+    height: 100%;
+  }
+  .programs .items .box h4 {
+    font-size: 13px;
+    top: 35%;
+  }
+  .programs .items .box p {
+    font-size: 10px;
+  }
+  .governates .container a {
+    width: 300px;
+    height: 300px;
+  }
+  .governates .container .box div::after {
+    width: 100%;
+    height: 100%;
+  }
+  .header {
+    margin: 10px;
+  }
+  header nav ul li {
+    padding: 5px !important;
   }
 }
 /* Responsive media End */
