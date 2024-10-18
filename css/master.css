@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap");
-:root {
+  root {
   --header-color: #4e342e;
   --main-color: #4e342ec2;
   --secondary-color: #e5d5c3;
@@ -26,7 +26,14 @@ html {
   justify-content: center;
   z-index: 9;
 }
-
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+}
+  100% {
+    transform: rotate(-360deg);
+}
+}
 /* Start Header  */
 
 header {
@@ -208,6 +215,9 @@ header .toggleBar span:last-child {
   color: #1d594b;
   line-height: 1.8;
 }
+.loader img {
+  animation: .4s rotate infinite linear;
+}
 .loader {
   height: 100%;
   width: 100%;
@@ -220,9 +230,9 @@ header .toggleBar span:last-child {
   top: 0;
   left: 0;
 }
-.go-up {
+.go-down {
   transform: translateY(100%);
-  transition: .9s ease-in-out ;
+  transition: 0.9s ease-in-out;
   opacity: 0;
 }
 svg {
@@ -452,13 +462,13 @@ svg {
   position: relative;
 }
 .contact-us::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 200px;
   width: 200px;
   background: linear-gradient(to right, #0b2c09, #236b1f);
   border-radius: 40% 25% 70% 55%;
-  filter: blur(98px);
+  filter: blur(25px);
   top: 23%;
 }
 
@@ -524,8 +534,10 @@ textarea {
   backdrop-filter: blur(10px);
   border: 1px black solid;
 }
-.contact-us .container form input:focus, textarea:focus {
+.contact-us .container form input:focus,
+textarea:focus {
   outline: none;
+  border: 3px solid green;
 }
 .contact-us .container form textarea {
   resize: none;
