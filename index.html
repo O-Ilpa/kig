@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KIG</title>
-  <link  href="images/favicon-16x16.png" type="image/x-icon" rel="icon">
+  <link href="images/favicon-16x16.png" type="image/x-icon" rel="icon">
+  <!-- Font Awesome Library -->
   <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="css/all.min.css">
+  <!-- Main Css File -->
   <link rel="stylesheet" href="css/master.css">
+  <!-- Normalize Library -->
   <link rel="stylesheet" href="css/normalize.css">
+  <!-- SwiperJs Library -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Overlock+SC&family=REM:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
   <!-- Start Header -->
   <header>
     <div class="toggleBar">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <nav>
       <img src="images/logo.webp" alt="" class="logo">
       <ul class="navBar">
@@ -27,12 +39,12 @@
         <li><a href="#governates">Governates</a></li>
         <li><a href="">Contact</a></li>
       </ul>
-        <a class="consultation" href="">Free Consultation</a>
+      <a class="consultation" href="">Free Consultation</a>
     </nav>
   </header>
   <!-- End Header -->
   <!-- Start landing -->
-  <section id="home"class="landing">
+  <section id="home" class="landing">
     <div class="container">
       <h1>Keep It <span>Green</span></h1>
       <p>Join the Movement for a Greener Future</p>
@@ -45,50 +57,58 @@
       <img src="./images/intro.webp" alt="">
       <div class="content">
         <h3>Our Vision</h3>
-        <p>Keep It Green sees an abundant future for all people, places and planet. We envision a planet where there is no conflict between our economic needs and sustainable systems of life</p>
+        <p>KEEP IT GREEN sees an abundant future for all people, places and planet. We envision a planet where there is
+          no conflict between our economic needs and sustainable systems of life</p>
         <h3>Our Mission</h3>
-        <p>Keep It Green focuses on integrating the shared interests of people, places and planet through partnerships and catalytic impact. We are on a 10 year mission to lead a global response to keep us within safe planetary boundaries.</p>
+        <p>KEEP IT GREEN Green focuses on integrating the shared interests of people, places and planet through
+          partnerships and catalytic impact. We are on a 10 year mission to lead a global response to keep us within
+          safe planetary boundaries.</p>
       </div>
     </div>
   </section>
   <!-- End Intro -->
   <!-- Start Programs  -->
   <section id="programs" class="programs">
-    <img src="images/plant.gif" >
+    <img src="images/plant.gif">
     <div class="header">
-      <h2>Discover How We Help People, Places, and the Planet</h2>
+      <h1>Discover How We Help People, Places, and the Planet</h1>
     </div>
     <div class="items">
       <div class="box">
         <div class="image">
           <img src="images/1.webp" alt="">
-          <h5>Grow Green Together</h5>
+          <h4>Grow Green Together</h4>
         </div>
         <p>Empowering communities through seeds and farming tools.
-          We provide people with seeds and farming equipment to help them grow their own plants, encouraging sustainable agriculture and a greener environment.</p>
+          We provide people with seeds and farming equipment to help them grow their own plants, encouraging sustainable
+          agriculture and a greener environment.</p>
       </div>
       <div class="box">
         <div class="image">
           <img src="images/2.webp" alt="">
-          <h5>Plant a Future</h5>
+          <h4>Plant a Future</h4>
         </div>
         <p>Bringing life back to nature, one tree at a time.
-          We actively plant trees and other vegetation in public spaces, creating greener surroundings. Join us in our efforts to combat deforestation and foster a healthy environment for future generations.</p>
+          We actively plant trees and other vegetation in public spaces, creating greener surroundings. Join us in our
+          efforts to combat deforestation and foster a healthy environment for future generations.</p>
       </div>
       <div class="box">
         <div class="image">
           <img src="images/3.webp" alt="">
-          <h5>Environmental Education</h6>
+          <h4>Environmental Education</h4>
         </div>
         <p>Inspiring young minds to protect the planet.
-          We visit schools to engage with students about the importance of environmental sustainability. Through interactive talks, we encourage children to become the next generation of eco-champions.</p>
+          We visit schools to engage with students about the importance of environmental sustainability. Through
+          interactive talks, we encourage children to become the next generation of eco-champions.</p>
       </div>
       <div class="box">
         <div class="image">
           <img src="images/4.webp" alt="">
-          <h5>Partners for Change</h5>
+          <h4>Partners for Change</h4>
         </div>
-        <p>Collaborating with global leaders to amplify our impact. Our initiative is proud to partner with major organizations and initiatives dedicated to environmental sustainability. Together, we strive to create a more significant, lasting impact on the planet.</p>
+        <p>Collaborating with global leaders to amplify our impact. Our initiative is proud to partner with major
+          organizations and initiatives dedicated to environmental sustainability. Together, we strive to create a more
+          significant, lasting impact on the planet.</p>
       </div>
     </div>
   </section>
@@ -97,14 +117,66 @@
   <section id="governates" class="governates">
     <img src="images/loc.gif" alt="">
     <div class="header">
-      <h2>Discover where we help </h2>
+      <h1>Discover where we help </h1>
     </div>
-    <div class="container">
+    <div class="swiper slide-container mySwiper">
+      <div class="slide-content">
+        <div class="swiper-wrapper container"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
   </section>
   <!-- End Governates -->
-  <!-- Main Js File -->
+  <!-- Start ContactUs  -->
+  <section id="contact" class="contact-us">
+    <div class="container">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="main-heading form" style="word-spacing: 14.2px; position: relative">
+          <h1>Get In Touch</h1>
+        </div>
+        <input type="hidden" name="access_key" value="aff29cd3-3db7-4b12-8616-a6cafbf562dc" />
+        <input type="text" name="Full Name" required placeholder="Your Full Name" minlength="10"
+          autocomplete="given-name" />
+        <input type="phone-number" name="Phone Number" id="phone" required placeholder="Enter Your number"
+          minlength="11" maxlength="11" autocomplete="mobile" />
+        <input type="email" name="email" placeholder="Enter Your Email" autocomplete="email" />
+        <textarea name="message" placeholder="Type Your message"></textarea>
+        <input type="submit" name="submit" />
+      </form>
+      <iframe class="maps"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d426.5148710442626!2d29.937386141263037!3d31.217433219446104!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c48ddf56aa71%3A0x1b0b81e0086d5a26!2s17%20Al%20Akaba%2C%20Sidi%20Gabir%2C%20Sidi%20Gaber%2C%20Alexandria%20Governorate%205433024!5e0!3m2!1sen!2seg!4v1718856692606!5m2!1sen!2seg"
+        width="700" height="800" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+  <!-- End ContactUs  -->
+  <!-- Start Loader -->
+  <div class="loader">
+    <img src="" alt="">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+      <radialGradient id="a12" cx=".66" fx=".66" cy=".3125" fy=".3125" gradientTransform="scale(1.5)">
+        <stop offset="0" stop-color="#1D594B"></stop>
+        <stop offset=".3" stop-color="#1D594B" stop-opacity=".9"></stop>
+        <stop offset=".6" stop-color="#1D594B" stop-opacity=".6"></stop>
+        <stop offset=".8" stop-color="#1D594B" stop-opacity=".3"></stop>
+        <stop offset="1" stop-color="#1D594B" stop-opacity="0"></stop>
+      </radialGradient>
+      <circle transform-origin="center" fill="none" stroke="url(#a12)" stroke-width="8" stroke-linecap="round"
+        stroke-dasharray="200 1000" stroke-dashoffset="0" cx="100" cy="100" r="70">
+        <animateTransform type="rotate" attributeName="transform" calcMode="spline" dur="2" values="360;0"
+          keyTimes="0;1" keySplines="0 0 1 1" repeatCount="indefinite"></animateTransform>
+      </circle>
+      <circle transform-origin="center" fill="none" opacity=".2" stroke="#1D594B" stroke-width="8"
+        stroke-linecap="round" cx="100" cy="100" r="70"></circle>
+    </svg>
+  </div>
+  <!-- End Loader -->
   <div id="overlay"></div>
-  <script src="script.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <!--  Main Js File -->
+  <script src="js/script.js"></script>
 </body>
-</html> 
+
+</html>
