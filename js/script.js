@@ -7,7 +7,7 @@ let bottomBar = document.querySelector("header .toggleBar span:nth-child(3)");
 let govContainer = document.querySelector(".governates .swiper-wrapper");
 let preLoader = document.querySelector(".loader");
 window.addEventListener("load", function () {
-  preLoader.classList.add("go-up");
+  preLoader.classList.add("go-down");
 });
 toggleBar.addEventListener("click", function () {
   navBar.classList.toggle("close");
